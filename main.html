@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>스마트 팜 시스템</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paho-mqtt/1.0.2/mqttws31.min.js" type="text/javascript"></script>
+    <script src="./static/mqttio.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js" type="text/javascript"></script>
+    <script src="./static/myChart.js" type="text/javascript"></script>
+    <style>
+        .chart-container {
+            display: flex;
+        }
+        canvas {
+            margin-right: 10px; /* 여백을 조절할 수 있습니다. */
+        }
+    </style>
+</head>
+<body>
+    <h3> <스마트 팜 시스템> </h3>
+    <hr>
+    <form id="smart-farm">
+        <b>브로커 IP:</b>
+        <input id="broker" type="text" name="broker" value=""><br>
+        <b>포트 번호:</b>
+        <input id="port" type="text" name="port" value="9001"><br>
+        <b>토픽스:</b>
+        <textarea id="topics" name="topics" rows="1" cols="40">letter,ultrasonic,temp,humid,lumin</textarea><br><br>
+        <input type="button" onclick="startConnect()" value="연결하기">
+        <input type="button" onclick="startDisconnect()" value="연결끊기">
+    </form>
+    <button id="hideshow" onclick="hideshow()">Hide/Show Chart</button>
+    <div id="letter-value"></div>
+    <div id="ultrasonic-value"></div>
+    <div id="temp-value"></div>
+    <div id="humid-value"></div>
+    <div id="lumin-value"></div>
+    <div id="messages"></div>
+    <div class="chart-container">
+        <canvas id="canvas1" width="600" height="400"></canvas>
+        <canvas id="canvas2" width="600" height="400"></canvas>
+    </div>
+    <div class="chart-container">
+        <canvas id="canvas3" width="600" height="400"></canvas>
+        <canvas id="canvas4" width="600" height="400"></canvas>
+    </div>
+</body>
+</body>
+</html>
