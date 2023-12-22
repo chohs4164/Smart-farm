@@ -70,12 +70,12 @@
 ### 4.1 습도가 40%이상으로 적절한 상태인 경우  
 > 가습기가 작동하지 않는다.
 
-![image](https://github.com/chohs4164/Smart-farm/assets/138971722/9532bd20-fbb5-4044-a1b2-b31442218eed)
+![image](https://github.com/chohs4164/Smart-farm/assets/138971722/842c3225-80ec-44e9-b196-90f67914af97)
 
 
 ### 4.2 습도가 40%이하로 낮은 경우  
 > 가습기가 작동하여 농작물 주변의 습도를 높여준다.
 
-![image](https://github.com/chohs4164/Smart-farm/assets/138971722/96348251-4592-4aa4-a0b1-f5298a63aa91)
+![image](https://github.com/chohs4164/Smart-farm/assets/138971722/cef58e80-d25f-4dae-88b5-48ac8b2d9ff3)
 
 
